@@ -1,0 +1,29 @@
+# Core runtime (Kaggle CUDA originally; CPU also works for inference)
+torch
+torchvision
+numpy
+scipy
+matplotlib
+opencv-python
+Pillow
+tqdm
+pyyaml
+torchinfo
+
+# Detection
+ultralytics
+
+# Transformer backbones (ViT / Swin ablations in pvnet/)
+timm
+
+# Mask generation for SPEED (pvnet/segmentor.ipynb, SAM ViT-H)
+segment-anything
+
+# FastPose training augmentation and config
+albumentations
+easydict
+pandas
+
+# Notebook
+jupyterlab
+ipykernel

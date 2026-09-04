@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data (never commit SPEED images / labels - see data/README.md)
+data/speed/
+data/yolo_dataset/
+data/PE/
+*.mp4
+
+# Kaggle / local scratch (but keep curated yolo/training_metrics/runs)
+kaggle/
+log/
+logs/
+lightning_logs/
+# NB: do NOT ignore `runs/` globally - yolo/training_metrics/runs/ is curated and committed.
+/runs/
+/results/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,7 @@
+# Weights are currently committed directly (each ~5 MB, under GitHub's 100 MB/file limit).
+# If you add larger checkpoints, uncomment the LFS rules below and run:
+#   git lfs install && git lfs track "*.pt" "*.pth" "*.onnx"
+#
+# *.pt filter=lfs diff=lfs merge=lfs -text
+# *.pth filter=lfs diff=lfs merge=lfs -text
+# *.onnx filter=lfs diff=lfs merge=lfs -text

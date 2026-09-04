@@ -1,0 +1,10 @@
+names:
+  0: tango_satellite
+nc: 1
+# Original Kaggle path was: /kaggle/input/speeddatasetforyolo/yolo_dataset
+# For local use, point `path` to your local YOLO dataset root (see ../../data/README.md).
+# Example:
+# path: ../../data/yolo_dataset
+path: ../../data/yolo_dataset
+train: images/train
+val: images/val
