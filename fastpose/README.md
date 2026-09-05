@@ -35,6 +35,19 @@ Testing notebook for `fastposedetr.ipynb`.
 Implementation report (6 pages, Jan 2026): dataset adaptation, detection integration,
 geometric pose parameterization, and SPEED results analysis.
 
+## Note on cell outputs
+
+Unlike the other folders, these notebooks are committed without cell outputs.
+They were pulled via the Kaggle API (`kaggle kernels pull`), which downloads source
+code only - never outputs. The SPN/PVNet/YOLO/HRNet notebooks came from an executed
+local copy, so their outputs were preserved. To see FastPose results rendered, open
+the Kaggle versions linked in [`../docs/kaggle.md`](../docs/kaggle.md)
+(`wolgwang/fastpose`, `wolgwang/fastposetest`, `wolgwang/fastposedetr`,
+`wolgwang/fastposedetrtest`), or re-run locally with the SPEED data. The trained
+checkpoint is available as a kernel output (`kaggle kernels output wolgwang/fastpose`,
+about 660 MB, too large for git) - see the implementation notes PDF for the
+results analysis.
+
 ## Data
 
 Same SPEED setup as the rest of the repo - see [`../data/README.md`](../data/README.md)
