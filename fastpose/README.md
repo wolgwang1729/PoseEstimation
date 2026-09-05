@@ -24,12 +24,30 @@ images and `/kaggle/input/mat-file` camera intrinsics and keypoints.
 Testing notebook for `fastpose.ipynb`. Evaluates translation error and orientation error
 on the validation split and real images.
 
+Results Summary:
+
+| Metric            | SPEED synthetic test-set | SPEED real test-set |
+|-------------------|--------------------------|---------------------|
+| Mean ET (m)       | [0.000 0.003 -0.043]     | [0.002 0.009 0.034] |
+| Mean ET mag (m)   | 0.0433                   | 0.0349              |
+| Median ET mag (m) | 0.054                    | 0.030               |
+| Mean ER (deg)     | 1.9136                   | 2.4273              |
+| Median ER (deg)   | 1.7137                   | 1.6518              |
+
 ### [fastposedetr.ipynb](fastposedetr.ipynb)
 Training notebook for the DETR-style detection/front-end variant paired with FastPose
 regression. Uses the same SPEED splits and camera files as above.
 
 ### [fastposedetrtest.ipynb](fastposedetrtest.ipynb)
-Testing notebook for `fastposedetr.ipynb`.
+Testing notebook for `fastposedetr.ipynb`. Evaluates detection IoU on the
+validation split and real images.
+
+Results Summary:
+
+| Metric          | SPEED synthetic test-set | SPEED real test-set |
+|-----------------|--------------------------|---------------------|
+| Mean IoU (-)    | 0.8817                   | 0.8583              |
+| Median IoU (-)  | 0.9134                   | 0.8219              |
 
 ### [FastPose-implementation-notes.pdf](FastPose-implementation-notes.pdf)
 Implementation report (6 pages, Jan 2026): dataset adaptation, detection integration,
