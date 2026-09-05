@@ -9,15 +9,15 @@ Course project **23CS250** - experiments with classical + learning baselines on 
 > and small YOLO weights. No partner / agency branding. No dataset images are committed -
 > see [`data/README.md`](data/README.md).
 
-## Methods explored
+## Methods explored (in chronological order)
 
 | Folder | What | Key result (see sub-README) |
 |---|---|---|
 | [`spn/`](spn/) | SPN (Sharma & D'Amico) - AlexNet/ResNet-50 + RPN + pose head, 1-pass and 2-pass (full-res crop), TPark baseline | 2-pass + ResNet-50 RPN: Mean IoU 0.84 synth / 0.77 real; ET-mag ~0.87 m synth |
 | [`pvnet/`](pvnet/) | PVNet pixel-wise voting + `solvePnP` - ResNet/AlexNet, ViT, Swin backbones, 8 vs 11 keypoints, SPEED→SPEED+ fine-tune; SAM ViT-H mask generation (`segmentor.ipynb`) | 11-kpt ResNet + SPEED pretrain + SPEED+ fine-tune: Mean ER 7.5° real (best PVNet) |
-| [`yolo/`](yolo/) | YOLO detection (YOLOv11n, 640px, 120 epochs) + YOLO→crop→ResNet-50 keypoint extension | Detector Mean IoU 0.951 synth / 0.912 real |
-| [`fastpose/`](fastpose/) | FastPose direct-regression ViT (no PnP) + DETR-style variant, last model explored | See `fastpose/README.md` + implementation notes PDF |
 | [`hrnet/`](hrnet/) | Deep landmark regression + nonlinear refinement (Bo Chen et al., HRNet-style) | See `training.logs` |
+| [`yolo/`](yolo/) | YOLO detection (YOLOv11n, 640px, 120 epochs) + YOLO→crop→ResNet-50 keypoint extension | Detector Mean IoU 0.951 synth / 0.912 real |
+| [`fastpose/`](fastpose/) | FastPose direct-regression ViT (no PnP) + DETR-style variant, last model explored | FastPose: Mean ER 1.91° synth / 2.43° real; DETR front-end Mean IoU 0.88 synth |
 | [`docs/`](docs/) | Sanitized project presentation + paper links (no PDFs vendored) | - |
 
 Each subfolder has its own `README.md` with per-notebook results tables
@@ -37,7 +37,7 @@ PoseEstimation/
     custom_dataset.yaml -> ../yolo/training_metrics/custom_dataset.yaml
   src/common/
     metrics.py                 # ET / ER / IoU helpers shared across notebooks
-  hrnet/  spn/  pvnet/  yolo/  fastpose/  # notebooks + per-folder READMEs
+  spn/  pvnet/  hrnet/  yolo/  fastpose/  # notebooks + per-folder READMEs (chronological order)
   yolo/training_metrics/       # YOLO weights (*.pt), runs/detect/train curves + CSVs, results_preview/
   weights/README.md            # weight provenance + LFS note
 ```
@@ -63,11 +63,11 @@ conda activate pose-est
 # then arrange as data/speed/{images,labels} and data/yolo_dataset/{images,labels}
 # YOLO config: yolo/training_metrics/custom_dataset.yaml (edit `path:` to your local root)
 
-# 4. Open notebooks, e.g.
+# 4. Open notebooks, e.g. (chronological order)
 jupyter lab spn/tparkspn.ipynb
 jupyter lab pvnet/pvnetonspeed11.ipynb
-jupyter lab yolo/yolospeed.ipynb
 jupyter lab hrnet/bochenkeypoint.ipynb
+jupyter lab yolo/yolospeed.ipynb
 jupyter lab fastpose/fastpose.ipynb
 ```
 
