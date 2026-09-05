@@ -93,9 +93,9 @@ This notebook uses the ViT as backbone for the PVNet model.
 Testing notebook for vitpose.ipynb. It evaluates the performance of the PVNet model with ViT backbone on the SPEED dataset, measuring orientation error, translation error. The results are not good probably because ViT is not suitable for dense prediction tasks like segmentation.
 
 Results Summary:
-+----------------------+------------------------------+------------------------------+
+
 | Metric               | SPEED synthetic test-set     | SPEED real test-set          |
-+----------------------+------------------------------+------------------------------+
+|----------------------|------------------------------|------------------------------|
 | Mean ET (m)          | [-0.004 -0.013 10.378]       | [-0.127 0.113 4.333]         |
 | Mean ET mag (m)      | 10.3777                      | 4.3367                       |
 | Median ET mag (m)    | 8.783                        | 4.150                        |
