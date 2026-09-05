@@ -69,5 +69,5 @@ and [`../docs/kaggle.md`](../docs/kaggle.md) for `wolgwang/speedsplit` and
 
 ## Credits
 
-- Author: 23/CS/250 MAYANKYADAV <mayankyadav_23cs250@dtu.ac.in>
+- Author: Mayank Yadav
 - Upstream FastPose-ViT: Pierre Victor Ancey et al. (see links above)

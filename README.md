@@ -1,7 +1,7 @@
 # Spacecraft Pose Estimation (SPEED / SPEED+)
 
 6-DoF pose estimation for the Tango spacecraft from single monocular images.
-Course project **23CS250** - experiments with classical + learning baselines on the
+Experiments with classical + learning baselines on the
 [SPEED](https://arxiv.org/abs/1908.04227) and
 [SPEED+](https://arxiv.org/abs/2110.03101) datasets (synthetic + real / domain-gap splits).
 
@@ -108,7 +108,8 @@ Standard SPEED metrics, see `src/common/metrics.py`:
 
 ## Provenance
 
-* Author: Mayank Yadav (23CS250).
+* Author: Mayank Yadav.
+* This work is ongoing and the repo will be updated as it continues.
 * Source notebooks ran on Kaggle GPUs (2025). Desktop submission copy used as canonical source;
   HDD extras (vendor clones, admin/proposal PDFs, large slide decks, lectures)
   intentionally excluded from this public repo.
