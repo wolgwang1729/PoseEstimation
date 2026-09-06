@@ -62,6 +62,14 @@ Full list: `kaggle datasets list --mine` (34 datasets; FER/dog-vs-cat/shakespear
 * [fastposedetr](https://www.kaggle.com/code/wolgwang/fastposedetr) ↔ `fastpose/fastposedetr.ipynb`
 * [fastposedetrtest](https://www.kaggle.com/code/wolgwang/fastposedetrtest) ↔ `fastpose/fastposedetrtest.ipynb`
 
+### `space-hop/` ↔
+* [spacehop-pretrain](https://www.kaggle.com/code/wolgwang/spacehop-pretrain) ↔ `space-hop/spacehop-pretrain.ipynb`
+* [spacehop-finetune](https://www.kaggle.com/code/wolgwang/spacehop-finetune) ↔ `space-hop/spacehop-finetune.ipynb`
+* [spacehop-test](https://www.kaggle.com/code/wolgwang/spacehop-test) ↔ `space-hop/spacehop-test.ipynb`
+* Chain: B attaches A's saved output (`jepa_best.pth`, auto-found), C attaches B's
+  (`spacehop_best.pth`, auto-found); per-epoch `*_last.pth` + `RESUME = "auto"`
+  continue past the ~9h cap.
+
 ### Other (not in this repo, for context)
 * [mtfnet](https://www.kaggle.com/code/wolgwang/mtfnet) - excluded from public repo (external snippet).
 

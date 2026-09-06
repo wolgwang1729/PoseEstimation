@@ -11,6 +11,7 @@
 * Bo Chen et al., "Satellite Pose Estimation with Deep Landmark Regression and Nonlinear Pose Refinement" - https://arxiv.org/abs/1908.11542 (`hrnet/`)
 * YOLO - Ultralytics YOLOv11/v12 docs - https://docs.ultralytics.com/
 * FastPose-ViT - Ancey et al., "FastPose-ViT: A Vision Transformer for Real-Time Spacecraft Pose Estimation" - https://arxiv.org/abs/2512.09792 (`fastpose/`)
+* SPACE-HOP - Dutta et al., "SPACE-HOP: Spacecraft 6-DoF Pose Estimation using Embedding-Predictive Pretraining and Hopf Map", AI4Space @ CVPR 2026 - https://openaccess.thecvf.com/content/CVPR2026W/AI4Space/papers/Dutta_SPACE-HOP_Spacecraft_6-DoF_Pose_Estimation_using_Embedding-Predictive_Pretraining_and_Hopf_CVPRW_2026_paper.pdf (`space-hop/`, reviews: https://openreview.net/forum?id=t9LTeubtto)
 
 ## Backbones / helpers
 * HRNet - Sun et al., "Deep High-Resolution Representation Learning" - https://arxiv.org/abs/1908.07919

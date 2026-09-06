@@ -18,6 +18,7 @@ Experiments with classical + learning baselines on the
 | [`hrnet/`](hrnet/) | Deep landmark regression + nonlinear refinement (Bo Chen et al., HRNet-style) | See `training.logs` |
 | [`yolo/`](yolo/) | YOLO detection (YOLOv11n, 640px, 120 epochs) + YOLO→crop→ResNet-50 keypoint extension | Detector Mean IoU 0.951 synth / 0.912 real |
 | [`fastpose/`](fastpose/) | FastPose direct-regression ViT (no PnP) + DETR-style variant, last model explored | FastPose: Mean ER 1.91° synth / 2.43° real; DETR front-end Mean IoU 0.88 synth |
+| [`space-hop/`](space-hop/) | SPACE-HOP (JEPA pretrain + Hopf classify+refine, no PnP) as Kaggle cells A/B/C | JEPA val Smooth-L1 0.17; full finetune ET 0.27 m / ER 3.43° |
 | [`docs/`](docs/) | Sanitized project presentation + paper links (no PDFs vendored) | - |
 
 Each subfolder has its own `README.md` with per-notebook results tables
@@ -37,7 +38,7 @@ PoseEstimation/
     custom_dataset.yaml -> ../yolo/training_metrics/custom_dataset.yaml
   src/common/
     metrics.py                 # ET / ER / IoU helpers shared across notebooks
-  spn/  pvnet/  hrnet/  yolo/  fastpose/  # notebooks + per-folder READMEs (chronological order)
+  spn/  pvnet/  hrnet/  yolo/  fastpose/  space-hop/  # notebooks + per-folder READMEs (chronological order)
   yolo/training_metrics/       # YOLO weights (*.pt), runs/detect/train curves + CSVs, results_preview/
   weights/README.md            # weight provenance + LFS note
 ```
